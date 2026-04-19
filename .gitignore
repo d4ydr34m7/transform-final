@@ -1,0 +1,54 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Analysis outputs (generated)
+analysis_outputs/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+ .amazonq/
+ .env.example
+ package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+.eggs/
+
+# Local DB and state
+*.sqlite3
+
+# Secrets (keep .env.example as template)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Cursor IDE
+.cursor/
