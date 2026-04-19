@@ -1,0 +1,16 @@
+/* Lines on top of gradient, behind card; visible on light theme */
+.particle-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: transparent;
+  opacity: 1;
+}
+
+.particle-background-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}

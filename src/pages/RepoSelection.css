@@ -1,0 +1,181 @@
+/* Light theme – pure blue wash (no purple, no green); standard blue only */
+.repo-selection-page {
+  min-height: 100vh;
+  position: relative;
+  background: radial-gradient(
+    ellipse 120% 100% at 15% 25%,
+    #d6e8fd 0%,
+    #b8d6fd 25%,
+    #d6e5fd 55%,
+    #eaf3fe 85%,
+    #f8fafc 100%
+  );
+}
+
+.repo-selection-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 88px);
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Wrapper: nudge card up for optical center (~20px) */
+.repo-selection-card-wrap {
+  padding: 3rem;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glassmorphism card – translucent, frosted; blue-tinted border; soft depth */
+.repo-selection-card {
+  position: relative;
+  background: rgba(248, 252, 255, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 20px;
+  padding: 2.75rem 3.25rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow:
+    0 16px 40px rgba(15, 23, 42, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+}
+
+.repo-selection-label {
+  display: block;
+  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+  padding-bottom: 12px;
+  opacity: 1;
+}
+
+.repo-selection-divider {
+  height: 1px;
+  background: rgba(31, 42, 55, 0.06);
+  margin-bottom: 16px;
+}
+
+.repo-selection-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Sign In form – same padding/borders as dropdown; dark inputs, white text */
+.repo-selection-signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.repo-selection-input {
+  width: 100%;
+  padding: 0.8125rem 1rem;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: 8px;
+  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  background: rgba(15, 23, 42, 0.6);
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.repo-selection-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.repo-selection-input:focus {
+  outline: none;
+  border-color: rgba(59, 130, 246, 0.7);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2), 0 0 12px rgba(59, 130, 246, 0.15);
+}
+
+.repo-selection-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.repo-selection-error {
+  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.875rem;
+  color: #b91c1c;
+  margin: 0;
+}
+
+.repo-selection-signin-button {
+  width: 100%;
+  justify-content: center;
+}
+
+.repo-selection-dropdown {
+  flex: 1;
+  padding: 0.8125rem 1rem;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: 8px;
+  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #1e293b;
+  background: #fafbff;
+  cursor: pointer;
+  box-sizing: border-box;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%231e293b' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.repo-selection-dropdown:focus {
+  outline: none;
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.repo-selection-dropdown option {
+  padding: 0.5rem;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* Blue gradient button – same palette, glass-style depth */
+.repo-selection-button {
+  padding: 0.8125rem 1.625rem;
+  min-width: 11rem;
+  background: linear-gradient(90deg, #1d4ed8 0%, #2563eb 50%, #3b82f6 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.1s, filter 0.2s;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35), 0 6px 20px rgba(37, 99, 235, 0.2);
+}
+
+.repo-selection-button:hover:not(:disabled) {
+  filter: brightness(1.06);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4), 0 8px 24px rgba(37, 99, 235, 0.25);
+}
+
+.repo-selection-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.repo-selection-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
